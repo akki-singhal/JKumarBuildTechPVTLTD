@@ -1,5 +1,6 @@
 // JavaScript for modal functionality
 function bookService() {
+  console.log("Booking service initiated");
     const modal = document.getElementById('bookingModal');
     modal.style.display = 'block';
 
@@ -14,7 +15,6 @@ function closeModal() {
     bookingForm.classList.remove('form-appear'); // Remove the animation class
     document.getElementById('bookingModal').style.display = 'none';
 }
-
 
 
 // blog read more functionality
@@ -42,7 +42,12 @@ document.querySelector('.cta-button').addEventListener('click', function(e) {
     const targetSection = document.querySelector('#contact');
 
     // Scroll to the target section
-    targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    if (targetSection) { // Add this check
+        targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+        console.error("Element with ID 'contact' not found."); // Optional: log an error
+    }
+  
 });
 
  
@@ -136,3 +141,5 @@ const slider = document.querySelector('.review-slider');
   }
 
   setInterval(autoScrollReviews, 30); // Adjust interval speed here
+
+
