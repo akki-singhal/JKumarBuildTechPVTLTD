@@ -391,8 +391,7 @@ header nav ul li a:hover {
     .icon-circle {
     width: 60px;
     height: 60px;
-    background-color: #eef3ff;
-    color: #2d1fac;
+    background-color: #204291;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -806,7 +805,7 @@ header nav ul li a:hover {
         position: fixed;
         z-index: 1000;
         left: 0;
-        top: 30;
+        top: 30px;
         width: 100%;
         height: 70%;
         overflow: auto;
