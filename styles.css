@@ -312,6 +312,75 @@ header nav ul li a:hover {
     }
 
 
+/* *********************************************************************************************************************************** */
+    /* Client Logos Section */
+    .clients-section {
+    height: 90vh;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: #fff;
+    }
+
+    .clients-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    text-align: center;
+    }
+
+    .client-row {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    }
+
+    .logos {
+    display: flex;
+    justify-content: center; /* Center logos */
+    flex-wrap: nowrap;
+    gap: 40px;
+    width: 100%;
+    animation: none !important; /* Disable scroll */
+    }
+
+    .client-row.right-scroll .logos {
+    animation: scroll-right 20s linear infinite;
+    }
+
+    .client-row img {
+    height: 12vh;
+    width: auto;
+    max-height: 100%;
+    object-fit: contain;
+    transition: filter 0.3s;
+    }
+
+    /* Animations */
+    /* @keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+    }
+
+    @keyframes scroll-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+    } */
+
+
 
 /* *********************************************************************************************************************************** */
 
@@ -1084,6 +1153,23 @@ header nav ul li a:hover {
         .social-icons {
             margin-top: 10px;
         }
+        .logos {
+            gap: 20px;
+            animation-duration: 30s;
+        }
+
+        .client-row img {
+            width: 70px;
+        }
+
+        .clients-section {
+            padding: 40px 10px;
+        }
+
+        .clients-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
 
     }
 
@@ -1148,26 +1234,44 @@ header nav ul li a:hover {
             background-color: #ffe0b2;
         }
 
-          .chairman-section {
-        padding: 40px 15px;
+        .chairman-section {
+            padding: 40px 15px;
+        }
+
+        .chairman-image img {
+            width: 130px;
+            height: 130px;
+        }
+
+        .chairman-info h3 {
+            font-size: 1.4rem;
+        }
+
+        .chairman-info .bio {
+            font-size: 0.95rem;
+            padding: 0 10px;
+        }
+
+        .chairman-info blockquote {
+            font-size: 1rem;
+            padding-left: 12px;
+        }
+
+        .client-row {
+        margin-bottom: 20px;
     }
 
-    .chairman-image img {
-        width: 130px;
-        height: 130px;
+    .logos {
+        gap: 30px;
+        animation-duration: 25s;
     }
 
-    .chairman-info h3 {
-        font-size: 1.4rem;
+    .client-row img {
+        width: 90px;
     }
 
-    .chairman-info .bio {
-        font-size: 0.95rem;
-        padding: 0 10px;
-    }
-
-    .chairman-info blockquote {
-        font-size: 1rem;
-        padding-left: 12px;
+    .clients-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
     }
     }
