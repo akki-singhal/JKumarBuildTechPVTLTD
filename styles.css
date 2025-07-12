@@ -344,7 +344,7 @@ header nav ul li a:hover {
     display: flex;
     justify-content: center; /* Center logos */
     flex-wrap: nowrap;
-    gap: 40px;
+    gap: 80px;
     width: 100%;
     animation: none !important; /* Disable scroll */
     }
